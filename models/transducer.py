@@ -42,9 +42,11 @@ from models.lm import (
 )
 
 # Losses
+'''
 from models.losses import (
     LossRNNT
 )
+'''
 
 # Ngram
 import kenlm
@@ -77,7 +79,8 @@ class Transducer(Model):
         self.decoder.apply(lambda m: init_vn(m, training_params.get("vn_std", None)))
 
         # Criterion
-        self.criterion = LossRNNT()
+        # self.criterion = LossRNNT()
+        self.criterion = None
 
         # Decoding
         self.max_consec_dec_step = decoder_params.get("max_consec_dec_step", 5)

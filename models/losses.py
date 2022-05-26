@@ -17,6 +17,7 @@ import torch
 import torch.nn as nn
 
 # RNN-T Loss
+'''
 import warp_rnnt
 
 class LossRNNT(nn.Module):
@@ -44,6 +45,7 @@ class LossRNNT(nn.Module):
             gather=True)
 
         return loss
+'''
 
 class LossCTC(nn.Module):
 
