@@ -1,3 +1,21 @@
+# ABR fork of Efficient Conformer
+
+## Installation
+Clone repo and set up environment.
+
+```
+conda create --name EffConform python=3.9
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+pip install -r requirements.txt
+```
+
+### Installing ctcdecode
+```
+git clone --recursive https://github.com/parlance/ctcdecode.git
+cd ctcdecode && pip install .
+```
+
+
 # Efficient Conformer: Progressive Downsampling and Grouped Attention for Automatic Speech Recognition
 
 Official implementation of the Efficient Conformer, progressively downsampled Conformer with grouped attention for Automatic Speech Recognition.
